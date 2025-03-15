@@ -11,17 +11,13 @@ def start():
 def home():
     return render_template("home.html")
 
-@app.route("/news", methods=['GET', 'POST'])
-def news():
-    return render_template("home.html")
-
-@app.route("/about", methods=['GET', 'POST'])
-def about():
-    return render_template("home.html")
+@app.route("/initiative", methods=['GET', 'POST'])
+def initiative():
+    return render_template("initiative.html")
 
 @app.route("/projects", methods=['GET', 'POST'])
 def projects():
-    return render_template("home.html")
+    return render_template("projects.html")
 
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():

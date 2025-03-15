@@ -1,15 +1,7 @@
+{% extends "base.html" %}
+
 {% block content %}
 <div class="container">
-    <h1 class="text-center">Міське самоврядування</h1>
-    <nav>
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Головна</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}">Новини</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">Ця ініціатива</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('projects') }}">Карта проектів</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Контакти</a></li>
-        </ul>
-    </nav>
 
     <h2>Новини міста</h2>
     <p>Тут будуть відображатися останні новини про розвиток міста.</p>

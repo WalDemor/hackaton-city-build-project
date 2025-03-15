@@ -8,10 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        {% block start %} 
+        {% block start %}
         base
         {% endblock %}
     </title>
+
+    <div class="container">
+        <h1 class="text-center">Міське самоврядування</h1>
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('initiative') }}">Ця ініціатива</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('projects') }}">Карта проектів</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Контакти</a></li>
+            </ul>
+        </nav>
 
 
     <div class="conteiner">
@@ -19,9 +30,6 @@
     </div>
 
 </head>
-
-
-
 
     <script
     type="text/javascript"
