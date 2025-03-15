@@ -2,14 +2,13 @@
 
 {% block content %}
 <div class="container">
-
-    <h2>Новини міста</h2>
+    <h2 class="my-4">Новини міста</h2>
     <p>Тут будуть відображатися останні новини про розвиток міста.</p>
     
     {% for new in news %}
     <div class="card my-3">
         <div class="card-body">
-            <h5 class="card-title">Новина {{ loop.index }}: {{ new.title }}</h5>
+            <h5 class="card-title">{{ new.title }}</h5>
             <p class="card-text">{{ new.description }}</p>
             <p class="text-muted">Дата: {{ new.date }}</p>
         </div>
