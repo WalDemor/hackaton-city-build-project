@@ -6,26 +6,6 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-=======
-    <title>{% block title %}Міське самоврядування{% endblock %}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-    <div class="container">
-        <header class="text-center my-4">
-            <h1>Міське самоврядування</h1>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/home">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/initiative">Ідеї мешканців</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/projects">Карта проектів</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Контакти</a></li>
-                </ul>
-            </nav>
-        </header>
->>>>>>> dcee97c13c4d2aa23e4b1a6d8122409c14cdd076
 
     <title>
         {% block start %}
@@ -34,15 +14,23 @@
     </title>
 
     <div class="container">
-        <h1 class="text-center">Міське самоврядування</h1>
-        <nav>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Головна</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('initiative') }}">Ця ініціатива</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('projects') }}">Карта проектів</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Контакти</a></li>
-            </ul>
-        </nav>
+        <title>{% block title %}Міське самоврядування{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <header class="text-center my-4">
+                <h1>Міське самоврядування</h1>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/home">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/initiative">Ідеї мешканців</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/projects">Карта проектів</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact">Контакти</a></li>
+                    </ul>
+                </nav>
+            </header>
 
 
     <div class="conteiner">
