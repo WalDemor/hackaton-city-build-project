@@ -39,8 +39,7 @@ def login():
     # form_data = {'email': email, 'password': password}
     
     
-    # return render_template("login.html", user=current_user, form_data=form_data)
-    return 0
+    return render_template("login.html")#, user=current_user, form_data=form_data)
 
 
 
@@ -93,8 +92,8 @@ def sign_up():
     # form_data = {'email': email, 'nickname': nickname,
     #              'password1': password1, 'password2': password2}
     
-    # return render_template("sign_up.html", user=current_user, form_data=form_data)
-    return 0
+    return render_template("sign_up.html")#, user=current_user, form_data=form_data)
+
 
 
 

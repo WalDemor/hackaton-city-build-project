@@ -20,13 +20,13 @@ def load_user(id):
 
 
 from .views.views import views
-#from .views.auth import auth
+from .views.auth import auth
 from .views.home import home
 # from .views.dbquery import dbquery
 
 
 app.register_blueprint(views, url_prefix='/')
-#app.register_blueprint(auth, url_prefix='/')
+app.register_blueprint(auth, url_prefix='/')
 app.register_blueprint(home, url_prefix='/')
 # app.register_blueprint(dbquery, url_prefix='/')
 
