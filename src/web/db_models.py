@@ -15,7 +15,7 @@ class Users(db.Model, UserMixin):
     last_name = db.Column(db.String(100))
     email = db.Column(db.String(150), unique=True)
     password = db.Column(db.String(40))
-    city = db.Column(db.Integer, db.ForeginKey("cities.id"))
+    city = db.Column(db.Integer, db.ForeignKey("cities.id"))
 
 
 class Cities(db.Model):
@@ -29,10 +29,8 @@ class Citizen_ideas(db.Model):
     __tablename__ = "citizen_ideas"
 
     id = db.Column(db.Integer, primary_key=True)
-    creation_date = db.Column(db.Timestamp)
-    citizen = db.Column(db.Integer, db.ForeginKey("users.id"))
+    creation_date = db.Column(db.DateTime)
+    citizen = db.Column(db.Integer, db.ForeignKey("users.id"))
     idea_name = db.Column(db.String(100), unique=True)
     idea_description = db.Column(db.String(500))
     files_path = db.Column(db.String(100))
-
-
